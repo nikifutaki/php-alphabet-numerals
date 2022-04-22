@@ -1,0 +1,26 @@
+{
+  "name": "nikifutaki/alphabet-numerals",
+  "description": "PHP Alphabet Numerals(base 26oid) Library",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/nikifutaki/php-alphabet-numerals",
+  "autoload": {
+      "psr-4": {
+          "Nikifutaki\\AlphabetNumerals\\": "src/"
+      }
+  },
+  "authors": [
+      {
+          "name": "nikifutaki",
+          "email": "82795329+nikifutaki@users.noreply.github.com"
+      }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+          "php": "^8.0"
+  },
+  "require-dev": {
+          "phpunit/phpunit": "*"
+  }
+}
