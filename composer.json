@@ -1,7 +1,6 @@
 {
   "name": "nikifutaki/alphabet-numerals",
   "description": "PHP Alphabet Numerals(base 26oid) Library",
-  "version": "1.0.0",
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/nikifutaki/php-alphabet-numerals",
