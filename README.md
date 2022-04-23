@@ -1,4 +1,8 @@
 # Alphabet Numerals
+
+[![License](https://img.shields.io/github/license/nikifutaki/php-alphabet-numerals)](https://github.com/nikifutaki/php-alphabet-numerals/blob/main/LICENSE)
+[![Test](https://github.com/nikifutaki/php-alphabet-numerals/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/nikifutaki/php-alphabet-numerals/actions/workflows/test.yml)
+
 PHP Alphabet Numerals(base 26oid) Library
 
 # Usage
