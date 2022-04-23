@@ -23,4 +23,4 @@ jobs:
         
     - name: phpunit
       run: |
-        php ./vendor/bin/phpunit ./tests/ConverterTest.php
+        php ./vendor/bin/phpunit ./tests
