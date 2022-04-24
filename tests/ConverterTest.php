@@ -17,11 +17,18 @@ class ConverterTest extends TestCase
       $this->assertSame('YZ', Converter::encode(676));
       $this->assertSame('GVP', Converter::encode(5320));
       $this->assertSame('UOCMV', Converter::encode(9862524));
+      $this->assertSame('FXSHRXW', Converter::encode(2147483647));
+      $this->assertSame(false, Converter::encode(2147483648));
     }
 
     public function testDecode()
     {
       $this->assertSame(false, Converter::decode(0));
+      $this->assertSame(false, Converter::decode(1));
+      $this->assertSame(false, Converter::decode(""));
+      $this->assertSame(false, Converter::decode("a"));
+      $this->assertSame(false, Converter::decode("Test"));
+      $this->assertSame(false, Converter::decode("TEST007"));
       $this->assertSame(1, Converter::decode('A'));
       $this->assertSame(26, Converter::decode('Z'));
       $this->assertSame(27, Converter::decode('AA'));
@@ -29,5 +36,8 @@ class ConverterTest extends TestCase
       $this->assertSame(676, Converter::decode('YZ'));
       $this->assertSame(5320, Converter::decode('GVP'));
       $this->assertSame(9862524, Converter::decode('UOCMV'));
+      $this->assertSame(2147483647, Converter::decode('FXSHRXW'));
+      $this->assertSame(2147483648, Converter::decode('FXSHRXX'));
+      $this->assertSame(false, Converter::decode('AAAAAAAA'));
     }
 }

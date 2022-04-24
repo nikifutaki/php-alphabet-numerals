@@ -13,8 +13,8 @@ class Converter
 
   public static function encode(int $number)
   {
-    if(!preg_match('/[0-9]*/u',$number))return false;
-    if(!$number)return false;
+    if($number < 1)return false;
+    if($number > 2147483647)return false;
 
     $result = '';
     $count = 0;
@@ -31,7 +31,7 @@ class Converter
 
   public static function decode(string $number)
   {
-    if(!preg_match('/[A-Z]/u',$number))return false;
+    if(!preg_match('/^[A-Z]{1,7}$/u',$number))return false;
 
     $number = strrev($number);
     $result = 0;

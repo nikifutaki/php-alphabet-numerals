@@ -6,7 +6,7 @@ class Operator
 {
   public static function increment(string $number)
   {
-    if(!preg_match('/[A-Z]/u',$number))return false;
+    if(!preg_match('/^[A-Z]{1,7}$/u',$number))return false;
 
     $native = Converter::decode($number);
     $result = Converter::encode($native+1);
@@ -16,7 +16,7 @@ class Operator
 
   public static function decrement(string $number)
   {
-    if(!preg_match('/[A-Z]/u',$number))return false;
+    if(!preg_match('/^[A-Z]{1,7}$/u',$number))return false;
 
     $native = Converter::decode($number);
     $result = Converter::encode($native-1);
