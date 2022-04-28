@@ -27,14 +27,14 @@ $encode = $cv->encode(50); // AX
 $decode = $cv->decode('C'); // 3
 ```
 
-## Operater
+## Operator
 If you use it many times, Converter is better.
 
 ```php
-use Nikifutaki\AlphabetNumerals\Operater;
+use Nikifutaki\AlphabetNumerals\Operator;
 
-$increment = Operater::increment('A'); // B
-$decrement = Operater::decrement('AA'); // Z
+$increment = Operator::increment('A'); // B
+$decrement = Operator::decrement('AA'); // Z
 
 or
 
